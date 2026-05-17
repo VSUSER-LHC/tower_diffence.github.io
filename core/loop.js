@@ -19,3 +19,12 @@ export function loop() {
 
   requestAnimationFrame(loop);
 }
+import { drawPath } from "../map/path.js";
+
+export function loop() {
+  clear();
+
+  drawPath(); // ← デバッグ用
+
+  requestAnimationFrame(loop);
+}
